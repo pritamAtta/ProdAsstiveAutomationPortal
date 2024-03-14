@@ -28,7 +28,7 @@ node{
 
         echo "Staring the Jenkins build for the Assistive Regression Test Suite"
 
-        git credentialsId: '132f2792-d000-4bcf-ba6d-d868b16d3158', url: 'https://github.com/pritamAtta/channelplay-automated-testing-1.git'
+        git credentialsId: '132f2792-d000-4bcf-ba6d-d868b16d3158', url: 'https://github.com/pritamAtta/ProdAsstiveAutomationPortal.git'
 
     }
 
