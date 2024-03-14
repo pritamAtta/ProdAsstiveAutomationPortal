@@ -28,7 +28,7 @@ node{
 
         echo "Staring the Jenkins build for the Assistive Regression Test Suite"
 
-        git credentialsId: '132f2792-d000-4bcf-ba6d-d868b16d3158', url: 'https://github.com/som0427/ProdAsstiveAutomationPortal.git'
+        git credentialsId: '132f2792-d000-4bcf-ba6d-d868b16d3158', url: 'https://github.com/pritamAtta/channelplay-automated-testing-1.git'
 
     }
 
@@ -47,7 +47,7 @@ node{
         }
         sh "mvn dependency:resolve"
         try{
-            sh "mvn clean verify -Dbrowser=chrome -dheadless=false -Denvironment=QA"
+            sh "mvn verify -Denvironment=QA"
 
         } catch(e) {
 
